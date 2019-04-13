@@ -7,6 +7,15 @@ This is an example project that illustrates how to use CMake >= 3.14 with C. The
  * We do not use an external library for testing but want to write the unit tests on our own.
  * We are only interested in getting our project to compile/run/pass tests. This repository does not cover installation/deployment.
 
+## What is CMake?
+Uh, I find that not entirely easy to answer. To me, CMake is primarily a tool for producing build scripts (think `make` files or VS/XCode projects) that are then processed by said build system to produce an artifact (a library, executable...). CMake can also be used to generate scripts for packing and installing the artifact (think `make install`), but this is not what I am interested in here.
+So, in short, CMake helps with:
+   * configuring your project for different compilers and build systems,
+   * handling dependencies between your projects,
+   * locating external dependencies (not covered),
+   * running your tests and reporting their results,
+   * deploying your software (not covered).
+
 ## Usage
 The main purpose of this repository is educational. Start by reading `CMakeLists.txt` from this repository. It is heavily commented and will point you to other files. Once you are done with this, here is how to actually execute the code:
 
