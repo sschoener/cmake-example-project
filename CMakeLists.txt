@@ -7,7 +7,7 @@
 # 
 # Find more information here:
 #  https://cmake.org/cmake/help/latest/command/cmake_minimum_required.html
-cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.14 FATAL_ERROR)
 
 # This sets up the project. We're giving it a name, a version, a description,
 # a URL, and what languages to use. The usual languages to use are
