@@ -51,3 +51,15 @@ cmake ..
 make
 ctest
 ```
+
+## Older CMake Versions
+This project will not work out of the box with CMake <= 3.10 because the `add_library` and `add_executable` directives before 3.11 always require source files. The easiest way to fix this is to, well, add the source files to those directives itself like so:
+```
+add_executable(myApp
+   main.c
+   # potentially more source files here
+)
+```
+
+## Changes required for C++
+If you are using this template with C++, you might want to change the tests: They do not use `const char*` right now for their messages and you likely need to change that to make it work with C++11 (for good reason)
