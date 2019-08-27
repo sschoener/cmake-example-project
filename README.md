@@ -30,9 +30,13 @@ The main purpose of this repository is educational. Start by reading `CMakeLists
     ```
     You should see some output from CMake, telling you what compiler it is using etc. CMake will choose a sensible default build system to produce build scripts or similar for. Usually, this is either `make`, Visual Studio, or XCode. You can change this by using
     ```
-    cmake .. -G"Ninja"
+    cmake -G"Ninja" ..
     ```
     for example. Visit [this page](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html) for more information.
+    CMake also automatically creates configurations for debug and release builds. You can ask for a specific version like so:
+     ```
+     cmake -DCMAKE_BUILD_TYPE=Release ..
+     ```
  3. Create a build from there with the build system that you have chosen. For make, this is simply a case of running
     ```
     make
