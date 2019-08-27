@@ -30,6 +30,10 @@ project("myLib"
 # This line is, of course, completely unnecessary, so you can safely remove it.
 message("Set project source dir: ${PROJECT_SOURCE_DIR}")
 
+# Require C++11 standard
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 # This enables the CTest module of CMake. It allows you to easily add tests to
 # your project and report the results back to a build server, if needed. We
 # will not be making use of the latter feature here.
